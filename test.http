@@ -1,0 +1,27 @@
+### GET all users
+GET http://127.0.0.1:5000/users
+
+### GET user by ID
+GET http://127.0.0.1:5000/users/1
+
+### CREATE user
+POST http://127.0.0.1:5000/users
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "Swetha",
+  "email": "swetha@example.com"
+}
+
+### UPDATE user
+PUT http://127.0.0.1:5000/users/1
+Content-Type: application/json
+
+{
+  "name": "Updated Name",
+  "email": "new@gmail.com"
+}
+
+### DELETE user
+DELETE http://127.0.0.1:5000/users/1
